@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Quiz (Difficult)</title>
+    <link rel="stylesheet" href="../css/harrypotter_difficult.css">
+</head>
+<body>
+    <header>
+        <h1>Harry Potter Quiz (Difficult)</h1>
+        <p>Think you're a true Potterhead? Test your knowledge!</p>
+    </header>
+    <section id="quiz-content">
+        <div class="question">
+            <p>1. What is the full name of Nearly Headless Nick?</p>
+            <button onclick="checkAnswer(this, 'wrong')">Sir Nicholas McKinnon</button>
+            <button onclick="checkAnswer(this, 'correct')">Sir Nicholas de Mimsy-Porpington</button>
+            <button onclick="checkAnswer(this, 'wrong')">Sir Nicholas Blackthorne</button>
+            <button onclick="checkAnswer(this, 'wrong')">Sir Nicholas of Ravenswood</button>
+        </div>
+        <div class="question">
+            <p>2. What is the name of the spell used to summon objects?</p>
+            <button onclick="checkAnswer(this, 'wrong')">Incendio</button>
+            <button onclick="checkAnswer(this, 'wrong')">Alohomora</button>
+            <button onclick="checkAnswer(this, 'correct')">Accio</button>
+            <button onclick="checkAnswer(this, 'wrong')">Wingardium Leviosa</button>
+        </div>
+        <div class="question">
+            <p>3. Which potion grants the drinker luck?</p>
+            <button onclick="checkAnswer(this, 'wrong')">Polyjuice Potion</button>
+            <button onclick="checkAnswer(this, 'wrong')">Amortentia</button>
+            <button onclick="checkAnswer(this, 'correct')">Felix Felicis</button>
+            <button onclick="checkAnswer(this, 'wrong')">Veritaserum</button>
+        </div>
+    </section>
+    <footer>
+        <p id="result"></p>
+    </footer>
+    <script src="../js/harrypotter_difficult.js"></script>
+</body>
+</html>
