@@ -3,28 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outer Banks Quiz</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Website Under Construction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: white;
+            background-image: url('https://example.com/your-image.jpg'); /* Voeg een passende foto-URL toe */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+        }
+        #overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Donkere overlay voor leesbaarheid */
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        .button {
+            text-decoration: none;
+            padding: 15px 30px;
+            color: white;
+            background-color: #3498db;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-    <div id="quiz-container">
-        <h1>Outer Banks Quiz</h1>
-        <p id="question-number">Vraag 1/10</p>
-        <div id="question"></div>
-        <div id="options"></div>
-        <div class="navigation">
-            <button id="prev-button" class="nav-button" onclick="previousQuestion()">Terug</button>
-            <button id="next-button" class="nav-button" onclick="nextQuestion()">Volgende</button>
-        </div>
+    <div id="overlay"></div>
+    <div class="content">
+        <h1>We're Building Something New</h1>
+        <p>Our website is currently under construction, but we’ll be here soon with our new awesome site. Stay tuned!</p>
+        <a href="#" class="button">Notify Me</a>
     </div>
-
-    <div id="result-container" style="display: none;">
-        <h2>Quiz Resultaat</h2>
-        <p id="score"></p>
-        <div id="incorrect-answers"></div>
-        <button onclick="restartQuiz()">Opnieuw starten</button>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
