@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outer Banks Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Outer Banks Quiz</h1>
+        <p id="question-number">Vraag 1/10</p>
+        <div id="question"></div>
+        <div id="options"></div>
+        <div class="navigation">
+            <button id="prev-button" class="nav-button" onclick="previousQuestion()">Terug</button>
+            <button id="next-button" class="nav-button" onclick="nextQuestion()">Volgende</button>
+        </div>
+    </div>
+
+    <div id="result-container" style="display: none;">
+        <h2>Quiz Resultaat</h2>
+        <p id="score"></p>
+        <div id="incorrect-answers"></div>
+        <button onclick="restartQuiz()">Opnieuw starten</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
