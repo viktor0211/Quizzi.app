@@ -1,2 +1,0 @@
-# Quizr
-quiz application
