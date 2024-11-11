@@ -3,18 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harry Potter Quiz</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="quiz-container">
-        <h1>Harry Potter Quiz</h1>
-        <form id="quiz-form">
-            <!-- Quiz questions will be dynamically generated here -->
-        </form>
-        <button id="submit-btn">Submit</button>
-        <p id="result"></p>
-    </div>
-    <script src="script.js"></script>
+    <header>
+        <h1>Welcome to the Quiz Hub!</h1>
+        <p>Test your knowledge on various topics. Select a quiz to get started!</p>
+    </header>
+    <section id="quiz-grid">
+        <a href="quizzes/harry_potter_easy.html" class="quiz-card">
+            <img src="images/harry_potter.jpg" alt="Harry Potter Quiz">
+            <h2>Harry Potter (Easy)</h2>
+        </a>
+        <a href="quizzes/harry_potter_difficult.html" class="quiz-card">
+            <img src="images/harry_potter.jpg" alt="Harry Potter Quiz">
+            <h2>Harry Potter (Difficult)</h2>
+        </a>
+        <a href="quizzes/outer_banks.html" class="quiz-card">
+            <img src="images/outer_banks.jpg" alt="Outer Banks Quiz">
+            <h2>Outer Banks</h2>
+        </a>
+        <a href="quizzes/twilight.html" class="quiz-card">
+            <img src="images/twilight.jpg" alt="Twilight Quiz">
+            <h2>Twilight</h2>
+        </a>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
